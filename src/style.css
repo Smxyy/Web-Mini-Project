@@ -1,0 +1,12 @@
+:root {
+    --primary-color-900: #FF408C;
+    --primary-color-600: #FF65A2;
+    --primary-color-400: #FBAFCD;
+    --secondary-color-900: #FFE79D;
+    --secondary-color-600: #FFF2CB;
+    --secondary-color-400: #FFF8E3;
+    --disable-color: #475569;
+    --paragraph-color: #334155;
+    --sub-heading-color: #1E293B;
+    --heading-color: #0F172A;
+}

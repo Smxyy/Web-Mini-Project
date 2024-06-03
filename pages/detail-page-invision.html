@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Page</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    </script>
+</head>
+
+<body class="font-serif tracking-wide">
+    <header class="flex flex-col">
+        <!-- navbar -->
+        <nav class="bg-white text-[20px] dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="../pages/about-us.html" class="flex items-center space-x-3 rtl:space-x-reverse w-1/5 max-[767px]:w-1/3">
+                    <img class="w-2/3 max-[451px]:w-4/5" src="../assets/grade-high-resolution-logo-black-removebg-preview.png" alt="Grade Logo">
+                </a>
+                <div class="flex gap-3 lg:gap-5 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse m-5 lg:m-10">
+                    <a href="../pages/login.html">
+                        <button type="button" class="text-white text-sm lg:text-[20px] bg-[var(--primary-color-600)] hover:bg-[var(--primary-color-900)] focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg px-4 py-2 text-center dark:bg-[var(--primary-color-600)] dark:hover:bg-[var(--primary-color-900)] dark:focus:ring-pink-800"
+                            aria-current="page">
+                        Login
+                        <i class="fa-solid fa-lock fill-slate-900 hover:fill-slate-50 ms-2 "></i>
+                    </button>
+                    </a>
+                    <a href="../pages/sign-up.html">
+                        <button type="button" class="text-white text-sm lg:text-[20px] bg-[var(--primary-color-600)] hover:bg-[var(--primary-color-900)] focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg px-4 py-2 text-center dark:bg-[var(--primary-color-600)] dark:hover:bg-[var(--primary-color-900)] dark:focus:ring-pink-800">
+                        Sign Up
+                        <i class="fa-solid fa-user-plus fill-slate-900 hover:fill-slate-50 ms-2 "></i>
+                    </button>
+                    </a>
+                    <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                  </svg>
+              </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul class="text-sm lg:text-[20px] flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="../src/index.html" class="block py-2 px-3 text-gray-900 bg-[var(--primary-color-400)] rounded md:bg-transparent md:hover:text-[var(--primary-color-600)] md:p-0 md:dark:text-[var(--primary-color-900)]">Home</a>
+                        </li>
+                        <li>
+                            <a href="../src/index.html" class=" block py-2 px-3 text-[var(--primary-color-600)] rounded hover:[var(--primary-color-900)] md:hover:bg-transparent md:hover:text-[var(--primary-color-600)] md:p-0 md:dark:hover:text-[var(--primary-color-900)] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 "
+                                aria-current="page">Course</a>
+                        </li>
+                        <li>
+                            <a href="../pages/about-us.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-[var(--primary-color-900)] md:hover:bg-transparent md:hover:text-[var(--primary-color-600)] md:p-0 md:dark:hover:text-[var(--primary-color-900)] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent
+                                dark:border-gray-700">About us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-[var(--primary-color-900)] md:hover:bg-transparent md:hover:text-[var(--primary-color-600)] md:p-0 md:dark:hover:text-[var(--primary-color-900)] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent
+                                dark:border-gray-700">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="w-full flex flex-col px-[100px] pt-[150px] pb-20 lg:p-[200px] lg:pb-20 bg-[whitesmoke]">
+        <section class="mt-10">
+            <div class="w-full flex flex-col justify-center">
+                <img class="h-auto max-w-lg md:max-w-xl lg:max-w-full rounded-lg object-cover" src="../assets/invision.jpeg" alt="One laptop one monitor">
+                <div class="flex flex-wrap justify-between my-10">
+                    <p class="text-sm lg:text-xl mb-7 mt-3.5">Prototyping Made Easy: Introduction to Invision</p>
+                    <button type="button" class="md:me-[5.5rem] lg:me-0 text-white text-sm lg:text-[20px] bg-[var(--primary-color-600)] hover:bg-[var(--primary-color-900)] focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg px-4 py-2 text-center dark:bg-[var(--primary-color-600)] dark:hover:bg-[var(--primary-color-900)] dark:focus:ring-pink-800">
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex flex-col gap-10 text-sm md:text-[20px] leading-relaxed">
+            <div class="flex flex-col gap-5 ">
+                <h4 class="font-bold text-md md:text-lg lg:text-2xl ">Course Description</h4>
+                <p>
+                    This course introduces you to Invision, a powerful prototyping tool that helps bring your web and app ideas to life.
+                </p>
+            </div>
+            <div class="flex flex-col gap-5 ">
+                <h4 class="font-bold text-md md:text-lg lg:text-2xl ">What you’ll learn</h4>
+                <div class="flex flex-col gap-1.5 ">
+                    <div class="flex gap-5 ">
+                        <i class="fa-solid fa-circle-check text-xl " style="color:var(--primary-color-600); "></i>
+                        <p>
+                            Create Interactive Prototypes: Craft interactive prototypes that simulate the user experience of your website or app.
+                        </p>
+                    </div>
+                    <div class="flex gap-5 ">
+                        <i class="fa-solid fa-circle-check text-xl " style="color:var(--primary-color-600); "></i>
+                        <p>
+                            Design Mockups and User Interfaces: Build high-fidelity mockups and user interfaces to showcase your design vision.
+                        </p>
+                    </div>
+                    <div class="flex gap-5 ">
+                        <i class="fa-solid fa-circle-check text-xl " style="color:var(--primary-color-600); "></i>
+                        <p>
+                            Collaboration and Feedback: Learn how to share your prototypes with stakeholders and collaborate effectively.
+                        </p>
+                    </div>
+                    <div class="flex gap-5 ">
+                        <i class="fa-solid fa-circle-check text-xl " style="color:var(--primary-color-600); "></i>
+                        <p>
+                            Integration with Design Tools (Optional): Explore how Invision integrates with popular design tools like Figma or Sketch.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 ">
+                <h4 class="font-bold text-md md:text-lg lg:text-2xl ">By the end of this course, you'll be able to:</h4>
+                <div class="flex flex-col gap-1.5 ">
+                    <div class="flex gap-5 ">
+                        <i class="fa-solid fa-circle-check text-xl " style="color:var(--primary-color-600); "></i>
+                        <p>
+                            Design and build interactive prototypes using Invision's intuitive features.
+                        </p>
+                    </div>
+                    <div class="flex gap-5 ">
+                        <i class="fa-solid fa-circle-check text-xl " style="color:var(--primary-color-600); "></i>
+                        <p>
+                            Communicate your design ideas effectively through high-fidelity mockups and prototypes.
+                        </p>
+                    </div>
+                    <div class="flex gap-5 ">
+                        <i class="fa-solid fa-circle-check text-xl " style="color:var(--primary-color-600); "></i>
+                        <p>
+                            Collaborate with team members and gather valuable feedback on your designs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 ">
+                <h4 class="font-bold text-md md:text-lg lg:text-2xl ">This course is ideal for:</h4>
+                <div class="flex flex-col gap-1.5 ">
+                    <div class="flex gap-5 ">
+                        <i class="fa-solid fa-circle-check text-xl " style="color:var(--primary-color-600); "></i>
+                        <p>
+                            Web designers and developers looking to streamline their design and prototyping workflow.
+                        </p>
+                    </div>
+                    <div class="flex gap-5 ">
+                        <i class="fa-solid fa-circle-check text-xl " style="color:var(--primary-color-600); "></i>
+                        <p>
+
+                            Product managers and UX/UI designers seeking to create interactive prototypes for user testing.
+                        </p>
+                    </div>
+                    <div class="flex gap-5 ">
+                        <i class="fa-solid fa-circle-check text-xl " style="color:var(--primary-color-600); "></i>
+                        <p>
+                            Freelancers and agencies seeking to showcase their design proposals effectively.
+                        </p>
+                    </div>
+                    <div class="flex gap-5 ">
+                        <i class="fa-solid fa-circle-check text-xl " style="color:var(--primary-color-600); "></i>
+                        <p>
+                            Individuals seeking to build basic websites or web applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="mt-20 px-20 ">
+        <div class="container mx-auto ">
+            <!-- Row START -->
+            <div class="flex flex-wrap justify-around ">
+
+                <!-- Widget 1 START -->
+                <div class="w-full lg:w-1/4 ">
+                    <!-- logo -->
+                    <a class="block mb-4 " href="# ">
+                        <img class="h-[100px] mx-auto " src="../assets/grade-high-resolution-logo-black-removebg-preview.png " alt="Grade logo ">
+                        <!-- <img class="dark-mode-item h-10 hidden " src="assets/images/logo-light.svg " alt="logo "> -->
+                    </a>
+                    <p class="text-center hover:text-[var(--primary-color-900)] ">Grade education theme, built specifically for the education centers which is dedicated to teaching and involve learners.</p>
+                    <!-- Social media icon -->
+                    <ul class="flex space-x-2 mt-3 justify-center ">
+                        <li> <button class="px-2 " href="# "><i class="fab fa-fw fa-facebook-f "></i></button> </li>
+                        <li> <button class="px-2 " href="# "><i class="fab fa-fw fa-instagram "></i></button> </li>
+                        <li> <button class="px-2 " href="# "><i class="fab fa-fw fa-twitter "></i></button> </li>
+                        <li> <button class="px-2 " href="# "><i class="fab fa-fw fa-linkedin-in "></i></button> </li>
+                    </ul>
+                </div>
+                <!-- Widget 1 END -->
+                <!-- Widget 2 START -->
+                <div class="w-full lg:w-auto pt-10 flex flex-wrap justify-center ">
+                    <div class="flex flex-wrap gap-5 ">
+                        <!-- Link block -->
+                        <div class="w-1/3 md:w-1/4 px-4 ">
+                            <h5 class="mb-4 ms-2 hover:text-[var(--primary-color-900)] ">Company</h5>
+                            <ul class="space-y-2 mx-2 ">
+                                <li><a class="hover:text-[var(--primary-color-900)] " href="# ">About us</a></li>
+                                <li><a class="hover:text-[var(--primary-color-900)] " href="# ">Contact us</a></li>
+                                <li><a class="hover:text-[var(--primary-color-900)] " href="# ">News and Blogs</a></li>
+                                <li><a class="hover:text-[var(--primary-color-900)] " href="# ">Library</a></li>
+                                <li><a class="hover:text-[var(--primary-color-900)] " href="# ">Career</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Link block -->
+                        <div class="w-1/3 md:w-1/4 px-4 ">
+                            <h5 class="mb-4 hover:text-[var(--primary-color-900)] ">Community</h5>
+                            <ul class="space-y-2 ">
+                                <li><a class=" hover:text-[var(--primary-color-900)] " href="# ">Documentation</a></li>
+                                <li><a class=" hover:text-[var(--primary-color-900)] " href="# ">Faq</a></li>
+                                <li><a class="hover:text-[var(--primary-color-900)] " href="# ">Forum</a></li>
+                                <li><a class=" hover:text-[var(--primary-color-900)] " href="# ">Sitemap</a></li>
+                            </ul>
+                        </div>
+                        <div class="w-1/3 md:w-auto px-4 ">
+                            <h5 class="mb-4 hover:text-[var(--primary-color-900)] ">Contact</h5>
+                            <!-- Time -->
+                            <p class="mb-2 hover:text-[var(--primary-color-900)] ">
+                                Toll free:<span class="ms-2 font-sans ">+1234 568 963</span>
+                                <span class="block text-sm font-sans ">(9:AM to 8:PM IST)</span>
+                            </p>
+                            <p class="mb-0 -4 hover:text-[var(--primary-color-900)] ">Email:<span class="font-light ms-2 ">reaksmey@gmail.com</span></p>
+                            <div class="grid space-x-4 mt-4">
+                                <!-- Google play store button -->
+                                <div class=" grid-cols-6 sm:grid-cols-4 md:grid-cols-3 lg:grid-cols-6 mb-5 m-1 ps-3">
+                                    <a href="# "> <img src="https://eduport.webestica.com/assets/images/client/google-play.svg " alt="play store "> </a>
+                                </div>
+                                <!-- App store button -->
+                                <div class="grid-cols-12 sm:grid-cols-8 md:grid-cols-6 lg:grid-cols-12">
+                                    <a href=" # "> <img src="https://eduport.webestica.com/assets/images/client/app-store.svg " alt="app-store "> </a>
+                                </div>
+                            </div>
+                            <!-- Row END -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Widget 2 END -->
+            </div>
+            <!-- Row END -->
+
+            <!-- Divider -->
+            <hr class="my-8 border-gray-200 ">
+
+            <!-- Bottom footer -->
+            <div class="py-6 ">
+                <div class="container mx-auto px-4 ">
+                    <div class="lg:flex justify-center items-center text-center lg:text-left ">
+                        <!-- copyright text -->
+                        <div> Copyrights ©2024 Grade. Build by <a href="index.html " target="_blank " class="text-gray-700 hover:text-[var(--primary-color-900)] ">Reaksmey</a></div>
+                        <!-- copyright links-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../index.js ">
+    </script>
+</body>
+
+</html>
